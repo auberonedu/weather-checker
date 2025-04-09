@@ -20,10 +20,10 @@ public class WeatherSummary {
         // Implement this method!
         // Hint: use Scanner. nextDouble() and hasNextDouble() will be helpful here!
         Scanner scanner = new Scanner(System.in); //adding scanner
-        while(scanner.hasNextDouble()) {
-            double temps = scanner.nextDouble();
+        while(scanner.hasNextDouble()) { //makes sure code has hasNextDouble
+            double temps = scanner.nextDouble(); //makes sure code has nextDouble
             System.out.println(temps);
         }
         scanner.close();
     }
-}
+    }
