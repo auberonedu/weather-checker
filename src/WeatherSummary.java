@@ -43,11 +43,22 @@ public class WeatherSummary {
             if (min == null || temp < min) {
                 min = temp;
             }
+
+            sum = sum + temp;
+            count++;
             
 
         } // end of while loop
-        System.out.println("Max: " + max);
-        System.out.println("Min: " + min);
+
+        if (count > 0) {
+            double avg = sum / count;
+            
+            System.out.println("Max: " + max);
+            System.out.println("Min: " + min);
+            System.out.println("Average: " + avg);
+        }
+        
+        
 
     }// end of main
 } // end of class
