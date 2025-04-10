@@ -22,14 +22,14 @@ public class WeatherSummary {
         // Implement this method!
         Scanner scanner = new Scanner(System.in);
 
-        double max = Double.POSITIVE_INFINITY;
-        double min = Double.NEGATIVE_INFINITY;
+        double max = Double.NEGATIVE_INFINITY;
+        double min = Double.POSITIVE_INFINITY;
         double sum = 0;
         int count = 0;
 
         while(scanner.hasNextDouble()) {
             double temp = scanner.nextDouble();
-            temp = sum;
+            temp += sum;
             count++;
 
             if (temp > max) {
@@ -38,10 +38,17 @@ public class WeatherSummary {
             if (temp < min) {
                 min = temp;
             }
+            if (count ==  0) {
+                System.out.println("No temperature was added. ");
+            } else {
+                double avg = sum/count;
+                System.out.println(avg);
+            }
             }
         }
+    }
         
 
         // Hint: use Scanner. nextDouble() and hasNextDouble() will be helpful here!
-    }
+    
 
