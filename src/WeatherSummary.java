@@ -24,5 +24,15 @@ public class WeatherSummary {
         Scanner scan = new Scanner(System.in);
         System.out.println("Let's start the weather summary");
 
+        double sum = 0.0;
+        int count = 0;
+        Double max = null;
+        Double min = null;
+
+        while (scan.hasNextDouble()) {
+            double temp = scan.nextDouble();
+            System.out.println(temp);
+        }
+
     }
 }
