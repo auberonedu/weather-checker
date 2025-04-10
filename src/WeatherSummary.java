@@ -38,8 +38,7 @@ public class WeatherSummary {
             if (temp < min) {
                 min = temp;
             }
-            
-            }
+        }   
             if (count ==  0) {
                 System.out.println("No temperature was added. ");
             } else {
@@ -47,9 +46,9 @@ public class WeatherSummary {
                 System.out.println("Max: " + max);
                 System.out.println("Min: " + min);
                 System.out.println("Average: " + avg);
+            }
         }
     }
-}
     
         
 
