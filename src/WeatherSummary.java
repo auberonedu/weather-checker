@@ -29,10 +29,25 @@ public class WeatherSummary {
         Double max = null;
         Double min = null;
 
+        
+
         while (scan.hasNextDouble()) {
             double temp = scan.nextDouble();
-            System.out.println(temp);
-        }
+            //System.out.println(temp);
 
-    }
-}
+            if (max == null || temp > max) {
+                max = temp;
+            }
+            
+
+            if (min == null || temp < min) {
+                min = temp;
+            }
+            
+
+        } // end of while loop
+        System.out.println("Max: " + max);
+        System.out.println("Min: " + min);
+
+    }// end of main
+} // end of class
