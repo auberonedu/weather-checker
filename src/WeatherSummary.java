@@ -31,6 +31,13 @@ public class WeatherSummary {
             double temp = scanner.nextDouble();
             temp = sum;
             count++;
+
+            if (temp > max) {
+                max = temp;
+            }
+            if (temp < min) {
+                min = temp;
+            }
             }
         }
         
